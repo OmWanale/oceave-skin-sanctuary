@@ -1,10 +1,12 @@
 import heroProducts from "@/assets/hero-products.jpg";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const Hero = () => {
+  const ref = useScrollReveal();
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
-      <div className="container mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 pt-28 pb-16">
-        {/* Text */}
+      <div ref={ref} className="scroll-reveal container mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 pt-28 pb-16">
         <div className="flex-1 text-center lg:text-left space-y-6">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-light leading-[1.05] tracking-tight text-foreground">
             No Hype.
@@ -21,8 +23,6 @@ const Hero = () => {
             Explore Products
           </a>
         </div>
-
-        {/* Hero Image */}
         <div className="flex-1 flex justify-center">
           <img
             src={heroProducts}

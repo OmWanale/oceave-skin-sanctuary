@@ -1,4 +1,5 @@
 import { Droplets, Users, Microscope, Sparkles } from "lucide-react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const features = [
   { icon: Droplets, title: "Clean Ingredients", desc: "No parabens, no sulfates. Just what your skin needs." },
@@ -8,9 +9,11 @@ const features = [
 ];
 
 const WhyChooseUs = () => {
+  const ref = useScrollReveal();
+
   return (
     <section id="why" className="py-24 md:py-32 bg-background">
-      <div className="container mx-auto px-6 md:px-16">
+      <div ref={ref} className="scroll-reveal container mx-auto px-6 md:px-16">
         <h2 className="text-3xl md:text-5xl font-display font-light text-center mb-16 text-foreground">
           Why OCEAVE
         </h2>
