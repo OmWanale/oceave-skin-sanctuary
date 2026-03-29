@@ -1,9 +1,12 @@
 import productFacewash from "@/assets/product-facewash.png";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const FeaturedProduct = () => {
+  const ref = useScrollReveal();
+
   return (
     <section className="py-24 md:py-32 bg-surface">
-      <div className="container mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center gap-16">
+      <div ref={ref} className="scroll-reveal container mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center gap-16">
         <div className="flex-1 flex justify-center">
           <img
             src={productFacewash}

@@ -1,7 +1,11 @@
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+
 const BrandSection = () => {
+  const ref = useScrollReveal();
+
   return (
     <section className="py-24 md:py-32 bg-surface">
-      <div className="container mx-auto px-6 md:px-16 max-w-3xl text-center">
+      <div ref={ref} className="scroll-reveal container mx-auto px-6 md:px-16 max-w-3xl text-center">
         <h2 className="text-3xl md:text-5xl font-display font-light mb-8 text-foreground">
           Meet OCEAVE
         </h2>

@@ -4,6 +4,7 @@ import productConditioner from "@/assets/product-conditioner.png";
 import productAloe from "@/assets/product-aloe.png";
 import productMoisturizer from "@/assets/product-moisturizer.png";
 import productFacewash from "@/assets/product-facewash.png";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const products = [
   { name: "Face Wash", desc: "Gentle daily cleanser", image: productFacewash },
@@ -15,9 +16,11 @@ const products = [
 ];
 
 const ProductShowcase = () => {
+  const ref = useScrollReveal();
+
   return (
     <section id="products" className="py-24 md:py-32 bg-background">
-      <div className="container mx-auto px-6 md:px-16">
+      <div ref={ref} className="scroll-reveal container mx-auto px-6 md:px-16">
         <h2 className="text-3xl md:text-5xl font-display font-light text-center mb-4 text-foreground">
           Our Products
         </h2>

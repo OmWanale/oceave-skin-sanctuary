@@ -1,9 +1,12 @@
 import { MessageCircle } from "lucide-react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const ContactSection = () => {
+  const ref = useScrollReveal();
+
   return (
     <section id="contact" className="py-24 md:py-32 bg-background">
-      <div className="container mx-auto px-6 md:px-16 max-w-2xl text-center space-y-8">
+      <div ref={ref} className="scroll-reveal container mx-auto px-6 md:px-16 max-w-2xl text-center space-y-8">
         <h2 className="text-3xl md:text-5xl font-display font-light text-foreground">
           Order Now
         </h2>
