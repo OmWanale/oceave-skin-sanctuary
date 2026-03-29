@@ -9,7 +9,7 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-24 md:py-32 bg-background">
+    <section id="why" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6 md:px-16">
         <h2 className="text-3xl md:text-5xl font-display font-light text-center mb-16 text-foreground">
           Why OCEAVE

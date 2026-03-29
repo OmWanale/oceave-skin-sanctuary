@@ -2,21 +2,8 @@ import heroProducts from "@/assets/hero-products.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
-      {/* Navbar */}
-      <nav className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-6 md:px-16 py-6">
-        <span className="font-display text-2xl md:text-3xl font-medium tracking-widest text-foreground">
-          OCEAVE
-        </span>
-        <a
-          href="#products"
-          className="text-sm font-body tracking-wide text-muted-foreground hover:text-foreground transition-colors"
-        >
-          Products
-        </a>
-      </nav>
-
-      <div className="container mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 pt-24 pb-16">
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
+      <div className="container mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 pt-28 pb-16">
         {/* Text */}
         <div className="flex-1 text-center lg:text-left space-y-6">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-light leading-[1.05] tracking-tight text-foreground">
