@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="order" className="py-24 md:py-32 bg-background">
+    <section id="contact" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6 md:px-16 max-w-2xl text-center space-y-8">
         <h2 className="text-3xl md:text-5xl font-display font-light text-foreground">
           Order Now
